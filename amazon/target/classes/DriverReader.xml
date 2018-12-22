@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="First Frame " parallel="false">
+<suite name="Amazon " parallel="false">
 
     <!--<parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>-->
@@ -10,15 +10,14 @@
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="Chrome"/>
     <parameter name="browserVersion" value="71.0"/>
-    <parameter name="url" value="http://automationpractice.com"/>
+    <parameter name="url" value="http://www.amazon.com"/>
 
 
 
-    <test name="Test Home">
+    <test name="Home Page">
         <classes >
-            <class name=""/>
-            <class name=""/>
-
+            <class name="HomePageTest"/>
+            <class name="HomeSearchBoxTest"/>
         </classes>
     </test>
 

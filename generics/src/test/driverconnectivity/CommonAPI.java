@@ -1,5 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 
 import java.io.IOException;
@@ -11,10 +13,10 @@ public class CommonAPI {
 
     @Parameters({/*"useCloudEnv","cloudEnvName", */"os",  "browserName", "browserVersion", "url"})
     @BeforeTest
-    public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("http://automationpractice.com/index") String url, @Optional("74") String browserVersion)throws IOException {
+    public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("http://www.amazon.com") String url, @Optional("74") String browserVersion)throws IOException {
 
         getLocalDriver(browserName,os);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
         driver.get(url);
@@ -27,16 +29,24 @@ public class CommonAPI {
 
     public WebDriver getLocalDriver(String browserName, String os) {
         if (browserName.equalsIgnoreCase("chrome")) {
-            if (os.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\GroupProject\\generics\\drivers\\chromedriver.exe");
+            /*ChromeOptions options =new ChromeOptions();
+            options.setHeadless(true);
+            options.addArguments("--start-maximized");
+            options.addArguments("--ignore-certificate-errors");
+            options.addArguments("--incognito");
+
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+            */if (os.equalsIgnoreCase("windows")) {
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\amazon_testCase\\Group_Project\\generics\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
             } else if (os.equalsIgnoreCase("mac")) {
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\GroupProject\\generics\\drivers\\chromedriver");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\amazon_testCase\\Group_Project\\generics\\drivers\\chromedriver");
                 driver = new ChromeDriver();
             }
         } else if (browserName.equalsIgnoreCase("firefox")) {
             if (os.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.gecko.driver", "C:\\Users\\Saeed\\Desktop\\GroupProject\\generics\\drivers\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "C:\\Users\\Saeed\\Desktop\\amazon_testCase\\Group_Project\\generics\\drivers\\geckodriver.exe");
                 driver = new ChromeDriver();
             } else if (os.equalsIgnoreCase("mac")) {
                 System.setProperty("webdriver.gecko.driver", "NOT USING MAC ;(");
