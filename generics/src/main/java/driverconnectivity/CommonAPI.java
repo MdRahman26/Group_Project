@@ -1,3 +1,5 @@
+package driverconnectivity;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,19 +11,19 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    protected WebDriver driver = null;
 
-    @Parameters({/*"useCloudEnv","cloudEnvName", */"os",  "browserName", "browserVersion", "url"})
-    @BeforeTest
-    public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("http://www.amazon.com") String url, @Optional("74") String browserVersion)throws IOException {
+    public static WebDriver driver = null;
 
-        getLocalDriver(browserName,os);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-
+    @Parameters({/*"useCloudEnv","cloudEnvName", */"os", "os_version", "browserName", "browserVersion", "url"})
+    @BeforeMethod
+    public void setUp(/*@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,*/
+            @Optional("windows") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("34")
+            String browserVersion, @Optional("https://www.amazon.com") String url) throws IOException {
+        getLocalDriver(browserName, os);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); // 20
+        driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS); //35
+        //driver.manage().window().maximize();
         driver.get(url);
-
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
     }
 
@@ -29,7 +31,7 @@ public class CommonAPI {
 
     public WebDriver getLocalDriver(String browserName, String os) {
         if (browserName.equalsIgnoreCase("chrome")) {
-            /*ChromeOptions options =new ChromeOptions();
+            ChromeOptions options =new ChromeOptions();
             options.setHeadless(true);
             options.addArguments("--start-maximized");
             options.addArguments("--ignore-certificate-errors");
@@ -37,7 +39,7 @@ public class CommonAPI {
 
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-            */if (os.equalsIgnoreCase("windows")) {
+            if (os.equalsIgnoreCase("windows")) {
                 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\amazon_testCase\\Group_Project\\generics\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
             } else if (os.equalsIgnoreCase("mac")) {

@@ -11,9 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="amazon" target="1.5" />
-      <module name="generics" target="1.5" />
-      <module name="groupproject" target="1.5" />
+      <module name="amazon" target="1.8" />
+      <module name="generics" target="1.8" />
+      <module name="groupproject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

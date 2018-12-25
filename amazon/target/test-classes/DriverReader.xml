@@ -14,10 +14,11 @@
 
 
 
-    <test name="Home Page">
+    <test name="regular test">
         <classes >
-            <class name="HomePageTest"/>
-            <class name="HomeSearchBoxTest"/>
+            <class name="test.regular.HomePageTest"/>
+            <class name="test.regular.HomeSearchBoxTest"/>
+
         </classes>
     </test>
 
