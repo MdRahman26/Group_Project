@@ -61,6 +61,7 @@ public class CommonAPI {
     @AfterTest
     public void closeOut(){
         driver.manage().deleteAllCookies();
+     driver.close();
         driver.quit();
     }
 
