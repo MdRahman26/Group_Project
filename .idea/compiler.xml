@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Cnn" target="1.5" />
+      <module name="Cnn" target="1.8" />
       <module name="generics" target="1.5" />
       <module name="groupproject" target="1.5" />
     </bytecodeTargetLevel>

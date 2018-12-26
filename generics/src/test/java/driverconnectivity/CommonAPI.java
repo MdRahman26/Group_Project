@@ -13,7 +13,7 @@ public class CommonAPI {
 
     @Parameters({/*"useCloudEnv","cloudEnvName", */"os",  "browserName", "browserVersion", "url"})
     @BeforeTest
-    public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("http://automationpractice.com/index") String url, @Optional("74") String browserVersion)throws IOException {
+    public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("10") String os_version, @Optional("http://automationpractice.com/index") String url, @Optional("74") String browserVersion) {
 
         getLocalDriver(browserName,os);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -30,10 +30,10 @@ public class CommonAPI {
     public WebDriver getLocalDriver(String browserName, String os) {
         if (browserName.equalsIgnoreCase("chrome")) {
             if (os.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\GroupProject\\generics\\drivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\burha\\Documents\\Group_Project\\generics\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
             } else if (os.equalsIgnoreCase("mac")) {
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saeed\\Desktop\\GroupProject\\generics\\drivers\\chromedriver");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\burha\\Documents\\Group_Project\\generics\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
             }
         } else if (browserName.equalsIgnoreCase("firefox")) {
