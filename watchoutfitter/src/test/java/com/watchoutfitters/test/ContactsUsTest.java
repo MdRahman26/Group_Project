@@ -15,7 +15,7 @@ public class ContactsUsTest extends CommonAPI {
     }
 
     @Test
-    public void ContactUsTest(){
+    public void ContactUsTest() {
         objOfContactUsPage.ContactusPage();
     }
 

@@ -20,6 +20,10 @@
             <class name="com.watchoutfitters.test.SearchTest"/>
             <class name="com.watchoutfitters.test.LogInPageTest"/>
             <class name="com.watchoutfitters.test.SignUpPageTest"/>
+            <class name="com.watchoutfitters.test.ShoppingCartTest"/>
+            <class name="com.watchoutfitters.test.ContactsUsTest"/>
+            <class name="com.watchoutfitters.test.FooterMenuTest"/>
+
 
 
 

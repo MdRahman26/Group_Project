@@ -13,7 +13,7 @@ public class SignUpPageTest extends CommonAPI {
     @BeforeMethod
     public void initializationOfElements(){
         objOfSignUpPage= PageFactory.initElements(driver,SignUpPage.class);
-        System.out.println("sueccesfully created Account");
+        System.out.println("succesfully created Account");
     }
 
     @Test

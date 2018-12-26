@@ -12,7 +12,7 @@ public class SignUpPage extends CommonAPI {
     @FindBy(className = "icon-account")
     private WebElement myAccountIcon;
 
-    @FindBy(id = "customer_register_link")
+    @FindBy(xpath = "//*[@id=\"customer_register_link\"]")
     private WebElement signUpLink;
 
     @FindBy(name = "customer[first_name]")
@@ -34,13 +34,9 @@ public class SignUpPage extends CommonAPI {
         myAccountIcon.click();
         signUpLink.click();
         fName.sendKeys("hamad");
-        Thread.sleep(2000);
         lName.sendKeys("hussain");
-        Thread.sleep(2000);
         email.sendKeys("hamad@yahoo.com");
-        Thread.sleep(2000);
         pass.sendKeys("khan12");
-        Thread.sleep(2000);
         signUpButton.click();
         Thread.sleep(2000);
         Assert.assertTrue(true,"//*[@id=\"shopify-section-1482527966363\"]/section/ul[1]/li[1]/a/img");
