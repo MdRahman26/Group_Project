@@ -1,14 +1,16 @@
-package driverconnectivity;
+package page.objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-
     protected WebDriver driver = null;
 
     @Parameters({/*"useCloudEnv","cloudEnvName", */"os",  "browserName", "browserVersion", "url"})

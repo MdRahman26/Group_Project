@@ -1,12 +1,11 @@
 package test.pageobject;
 
-import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.objects.HomePageObjects;
 
-public class HomePageTest extends CommonAPI {
+public class HomePageTest extends HomePageObjects{
 
     HomePageObjects objectOfHomePage = null;
 

@@ -17,7 +17,6 @@
         <classes>
 
             <class name="test.pageobject.HomePageTest"/>
-            <class name="test.pageobject."/>
 
 
         </classes>

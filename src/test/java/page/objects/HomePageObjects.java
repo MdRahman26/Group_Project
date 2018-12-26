@@ -1,13 +1,10 @@
 package page.objects;
-
-import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class HomePageObjects extends CommonAPI {
+public class HomePageObjects  extends CommonAPI{
 
     @FindBy(how = How.PARTIAL_LINK_TEXT,partialLinkText = "News")
     WebElement newsButton;
