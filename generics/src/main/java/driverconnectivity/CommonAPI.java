@@ -18,7 +18,7 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(/*@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,*/
             @Optional("windows") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("34")
-            String browserVersion, @Optional("https://www.amazon.com") String url) throws IOException {
+            String browserVersion, @Optional("https://www.google.com") String url) throws IOException {
         getLocalDriver(browserName, os);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); // 20
         driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS); //35
