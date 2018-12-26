@@ -2,12 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f6b8422-c522-4afd-a59c-502173592419" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics/target/classes/driverconnectivity/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/generics/target/classes/driverconnectivity/CommonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/ContactUsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/ContactUsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/FooterMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/FooterMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/LogInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/LogInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/SearchTextPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/SearchTextPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/ShoppingCartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/ShoppingCartPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/SignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/classes/com/watchoutfitters/pages/SignUpPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/ContactsUsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/ContactsUsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/FooterMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/FooterMenuTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/HomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/LogInPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/SearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/ShoppingCartTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/ShoppingCartTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/SignUpPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/watchoutfitter/target/test-classes/com/watchoutfitters/test/SignUpPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watchoutfitter/watchoutfitter.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/generics/target/" />
     <ignored path="$PROJECT_DIR$/amazon/target/" />
+    <ignored path="$PROJECT_DIR$/watchoutfitter/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="1596">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,22 +53,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="855">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,16 +64,23 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-107" />
+            <state relative-caret-position="436">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java">
+        <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/com/watchoutfitters/test/ShoppingCartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            <state relative-caret-position="76">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -157,8 +171,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,104 +188,42 @@
             <path>
               <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="pageobjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="regular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
               <item name="generics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="watchoutfitter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="watchoutfitter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="watchoutfitter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="watchoutfitter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="watchoutfitter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="driverconnectivity" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,8 +232,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545772010084" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../webautomationnov18" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545853766277" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -307,11 +259,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestFooterTopLinks">
-    <configuration name="All in groupproject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="amazon" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+  <component name="RunManager" selected="TestNG.ShoppingCartTest.selectingAWatch">
+    <configuration name="ShoppingCartTest.selectingAWatch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="watchoutfitter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.watchoutfitters.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.watchoutfitters.test" />
+      <option name="MAIN_CLASS_NAME" value="com.watchoutfitters.test.ShoppingCartTest" />
+      <option name="METHOD_NAME" value="selectingAWatch" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -384,11 +346,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ShoppingCartTest.selectingAWatch" />
         <item itemvalue="TestNG.TestFooterTopLinks" />
         <item itemvalue="TestNG.TestFooterTopLinks.amazonPaymentProductsTest" />
         <item itemvalue="TestNG.TestLogIn" />
         <item itemvalue="TestNG.TestSeachBox" />
-        <item itemvalue="JUnit.All in groupproject" />
       </list>
     </recent_temporary>
   </component>
@@ -406,9 +368,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSeachBox_searchIconTest - 2018.12.25 at 13h 08m 01s.xml">
-      <configuration name="TestSeachBox.searchIconTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Saeed_Desktop_amazon_testCase_Group_Project_amazon_src_test_resources_OnlyMainTest_xml - 2018.12.25 at 14h 04m 59s.xml">
       <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/OnlyMainTest.xml" configurationId="TestNG" />
     </history-entry>
@@ -436,12 +395,14 @@
     <history-entry file="TestFooterTopLinks - 2018.12.25 at 16h 01m 00s.xml">
       <configuration name="TestFooterTopLinks" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ShoppingCartTest_selectingAWatch - 2018.12.26 at 14h 49m 07s.xml">
+      <configuration name="ShoppingCartTest.selectingAWatch" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193159" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22266935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -449,7 +410,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966466" visible="true" weight="0.44554454" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966466" weight="0.44554454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,9 +527,7 @@
     <entry file="file://$PROJECT_DIR$/amazon/amazon.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/scret.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/scret.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/base/Preconditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -692,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="1596">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -702,35 +661,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="855">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amazon/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        <state relative-caret-position="436">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/com/watchoutfitters/test/ShoppingCartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>

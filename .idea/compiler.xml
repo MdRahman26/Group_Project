@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="amazon" />
         <module name="generics" />
+        <module name="watchoutfitter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="amazon" target="1.8" />
       <module name="generics" target="1.8" />
       <module name="groupproject" target="1.8" />
+      <module name="watchoutfitter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

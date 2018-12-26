@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/amazon/amazon.iml" filepath="$PROJECT_DIR$/amazon/amazon.iml" />
       <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/groupproject.iml" filepath="$PROJECT_DIR$/groupproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watchoutfitter/watchoutfitter.iml" filepath="$PROJECT_DIR$/watchoutfitter/watchoutfitter.iml" />
     </modules>
   </component>
 </project>
