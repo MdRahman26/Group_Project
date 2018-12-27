@@ -1,6 +1,7 @@
 
 
-1) Clone master 
+1) Clone master (updated all dependency from Jihad bhai file)
+
 
 2) Run test on CommonAPI need to change only path. 
 
