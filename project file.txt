@@ -1,0 +1,12 @@
+
+
+1) Clone master 
+
+2) Run test on CommonAPI need to change only path. 
+
+3) need to push only your Website folder in your respective branch.
+   before pushing make sure there is no idea,target folder or generics.
+   (Only these files to be in the branch src, website.iml, pom.xml)
+
+
+
