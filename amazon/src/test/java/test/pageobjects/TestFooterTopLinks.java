@@ -24,7 +24,7 @@ public class TestFooterTopLinks extends CommonAPI {
 
 
     @Test (priority = 5)
-    public void countryTabTest(){
+    public void countryTabTest() throws InterruptedException {
         objectOfFooterTopLinks.countryTab();
     }
 
@@ -47,10 +47,9 @@ public class TestFooterTopLinks extends CommonAPI {
 
 
     @Test
-    public void laguageTabTest(){
+    public void laguageTabTest() throws InterruptedException {
         objectOfFooterTopLinks.laguageTab();
     }
-
 
 
 

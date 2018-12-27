@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8f6b8422-c522-4afd-a59c-502173592419" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestNavigationBar1.java" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestNavigationBar1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/pageobjects/home/FooterTopLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/target/test-classes/pageobjects/home/FooterTopLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestFooterTopLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestFooterTopLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics/target/classes/driverconnectivity/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/generics/target/classes/driverconnectivity/CommonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics/target/generics-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/generics/target/" />
@@ -20,53 +29,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="114">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/pom.xml">
+        <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/regular/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-107" />
+            <state relative-caret-position="139">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java">
+        <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestNavigationBar1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            <state relative-caret-position="160">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/LogIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,9 +136,10 @@
         <option value="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestLogIn.java" />
         <option value="$PROJECT_DIR$/amazon/src/test/resources/OnlyMainTest.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java" />
-        <option value="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java" />
         <option value="$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java" />
+        <option value="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java" />
+        <option value="$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java" />
+        <option value="$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestNavigationBar1.java" />
       </list>
     </option>
   </component>
@@ -131,11 +153,16 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="amazon" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="generics" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="generics" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -243,36 +270,6 @@
               <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
               <item name="generics" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="driverconnectivity" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -280,11 +277,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545772010084" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../webautomationnov18" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545849779681" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../different/D" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -307,16 +305,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestFooterTopLinks">
-    <configuration name="All in groupproject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="amazon" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFooterTopLinks" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/PageObjectsTest.xml">
+    <configuration name="test.pageobjects in amazon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amazon" />
       <extension name="coverage">
         <pattern>
@@ -325,24 +315,32 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.pageobjects" />
-      <option name="MAIN_CLASS_NAME" value="test.pageobjects.TestFooterTopLinks" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/PageObjectsTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="amazon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/amazon/src/test/resources/PageObjectsTest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFooterTopLinks.amazonPaymentProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.checkIconTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="amazon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.pageobjects.*" />
+          <option name="PATTERN" value="test.regular.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.pageobjects" />
-      <option name="MAIN_CLASS_NAME" value="test.pageobjects.TestFooterTopLinks" />
-      <option name="METHOD_NAME" value="amazonPaymentProductsTest" />
+      <option name="PACKAGE_NAME" value="test.regular" />
+      <option name="MAIN_CLASS_NAME" value="test.regular.HomePageTest" />
+      <option name="METHOD_NAME" value="checkIconTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -350,23 +348,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFooterTopLinks and 3 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.pageobjects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.pageobjects" />
-      <option name="MAIN_CLASS_NAME" value="test.pageobjects.TestLogIn" />
+      <option name="TEST_OBJECT" value="PATTERN" />
       <properties />
       <listeners />
+      <patterns>
+        <pattern testClass="test.pageobjects.TestFooterTopLinks" />
+        <pattern testClass="test.pageobjects.TestLogIn" />
+        <pattern testClass="test.pageobjects.TestNavigationBar1" />
+        <pattern testClass="test.pageobjects.TestSeachBox" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSeachBox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFooterTopLinks.countryTabTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="amazon" />
       <extension name="coverage">
         <pattern>
@@ -375,7 +372,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.pageobjects" />
-      <option name="MAIN_CLASS_NAME" value="test.pageobjects.TestSeachBox" />
+      <option name="MAIN_CLASS_NAME" value="test.pageobjects.TestFooterTopLinks" />
+      <option name="METHOD_NAME" value="countryTabTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -384,11 +383,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestFooterTopLinks" />
-        <item itemvalue="TestNG.TestFooterTopLinks.amazonPaymentProductsTest" />
-        <item itemvalue="TestNG.TestLogIn" />
-        <item itemvalue="TestNG.TestSeachBox" />
-        <item itemvalue="JUnit.All in groupproject" />
+        <item itemvalue="TestNG.C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/PageObjectsTest.xml" />
+        <item itemvalue="TestNG.HomePageTest.checkIconTest" />
+        <item itemvalue="TestNG.TestFooterTopLinks and 3 more" />
+        <item itemvalue="JUnit.test.pageobjects in amazon" />
+        <item itemvalue="TestNG.TestFooterTopLinks.countryTabTest" />
       </list>
     </recent_temporary>
   </component>
@@ -406,42 +405,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSeachBox_searchIconTest - 2018.12.25 at 13h 08m 01s.xml">
-      <configuration name="TestSeachBox.searchIconTest" configurationId="TestNG" />
+    <history-entry file="TestFooterTopLinks_countryTabTest - 2018.12.25 at 18h 50m 44s.xml">
+      <configuration name="TestFooterTopLinks.countryTabTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Saeed_Desktop_amazon_testCase_Group_Project_amazon_src_test_resources_OnlyMainTest_xml - 2018.12.25 at 14h 04m 59s.xml">
-      <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/OnlyMainTest.xml" configurationId="TestNG" />
+    <history-entry file="TestFooterTopLinks_countryTabTest - 2018.12.25 at 18h 52m 15s.xml">
+      <configuration name="TestFooterTopLinks.countryTabTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Saeed_Desktop_amazon_testCase_Group_Project_amazon_src_test_resources_OnlyMainTest_xml - 2018.12.25 at 14h 06m 31s.xml">
-      <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/OnlyMainTest.xml" configurationId="TestNG" />
+    <history-entry file="TestFooterTopLinks_countryTabTest - 2018.12.25 at 18h 55m 13s.xml">
+      <configuration name="TestFooterTopLinks.countryTabTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSeachBox - 2018.12.25 at 14h 23m 07s.xml">
-      <configuration name="TestSeachBox" configurationId="TestNG" />
+    <history-entry file="TestFooterTopLinks_countryTabTest - 2018.12.25 at 19h 44m 44s.xml">
+      <configuration name="TestFooterTopLinks.countryTabTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSeachBox - 2018.12.25 at 14h 31m 28s.xml">
-      <configuration name="TestSeachBox" configurationId="TestNG" />
+    <history-entry file="test_pageobjects_in_amazon - 2018.12.25 at 20h 01m 46s.xml">
+      <configuration name="test.pageobjects in amazon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestLogIn - 2018.12.25 at 14h 37m 00s.xml">
-      <configuration name="TestLogIn" configurationId="TestNG" />
+    <history-entry file="TestFooterTopLinks_and_3_more - 2018.12.25 at 20h 09m 07s.xml">
+      <configuration name="TestFooterTopLinks and 3 more" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestFooterTopLinks - 2018.12.25 at 15h 54m 15s.xml">
-      <configuration name="TestFooterTopLinks" configurationId="TestNG" />
+    <history-entry file="C__Users_Saeed_Desktop_amazon_testCase_Group_Project_amazon_src_test_resources_PageObjectsTest_xml - 2018.12.25 at 21h 33m 13s.xml">
+      <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/PageObjectsTest.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestFooterTopLinks_amazonPaymentProductsTest - 2018.12.25 at 15h 55m 25s.xml">
-      <configuration name="TestFooterTopLinks.amazonPaymentProductsTest" configurationId="TestNG" />
+    <history-entry file="HomePageTest_checkIconTest - 2018.12.26 at 13h 36m 00s.xml">
+      <configuration name="HomePageTest.checkIconTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestFooterTopLinks_amazonPaymentProductsTest - 2018.12.25 at 15h 56m 00s.xml">
-      <configuration name="TestFooterTopLinks.amazonPaymentProductsTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Saeed_Desktop_amazon_testCase_Group_Project_amazon_src_test_resources_PageObjectsTest_xml - 2018.12.26 at 13h 38m 59s.xml">
+      <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/PageObjectsTest.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestFooterTopLinks - 2018.12.25 at 16h 01m 00s.xml">
-      <configuration name="TestFooterTopLinks" configurationId="TestNG" />
+    <history-entry file="C__Users_Saeed_Desktop_amazon_testCase_Group_Project_amazon_src_test_resources_PageObjectsTest_xml - 2018.12.26 at 13h 42m 28s.xml">
+      <configuration name="C:/Users/Saeed/Desktop/amazon_testCase/Group_Project/amazon/src/test/resources/PageObjectsTest.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193159" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23272972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -449,13 +447,13 @@
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966466" visible="true" weight="0.44554454" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49899396" weight="0.44554454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50033534" side_tool="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.501006" side_tool="true" weight="0.44554454" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32956153" />
       <window_info anchor="bottom" id="Favorites" order="11" weight="0.32956153" />
@@ -524,11 +522,25 @@
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java</url>
+          <line>26</line>
+          <properties class="test.pageobjects.TestFooterTopLinks" method="countryTabTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestSeachBox.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -545,16 +557,6 @@
     <entry file="file://$PROJECT_DIR$/amazon/src/test/java/page/object/Run.java" />
     <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/Page.java" />
     <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/Testing.java" />
-    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/regular/HomePageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/amazon/debug.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
       <provider editor-type-id="text-editor">
@@ -566,9 +568,7 @@
     <entry file="file://$PROJECT_DIR$/amazon/amazon.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/scret.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/scret.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/base/Preconditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -605,28 +605,6 @@
           <caret line="81" column="56" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/LogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1199">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestNavigationBar1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -690,47 +668,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java">
+    <entry file="file://$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1064">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amazon/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestFooterTopLinks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107" />
+        <state relative-caret-position="114">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generics/src/main/java/driverconnectivity/CommonAPI.java">
+    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/LogIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        <state relative-caret-position="1140">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/pageobjects/home/FooterTopLinks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/regular/HomePageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/test/java/test/pageobjects/TestNavigationBar1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,8 +2,10 @@ package pageobjects.home;
 
 import driverconnectivity.CommonAPI;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class FooterTopLinks extends CommonAPI {
 
@@ -25,6 +27,12 @@ public class FooterTopLinks extends CommonAPI {
 
     @FindBy(id="icp-touch-link-country")
     private WebElement countryTab;
+
+    @FindBy (id = "icp-btn-close-announce")
+    private WebElement languagePopUpDismiss;
+
+    @FindBy(id = "icp-selected-country")
+    private WebElement countryWindowPopUp;
 
 
     public void getToKnowUs(){
@@ -57,18 +65,26 @@ public class FooterTopLinks extends CommonAPI {
     }
 
 
-    public void laguageTab(){
+    public void laguageTab() throws InterruptedException {
+
 
         laguageTab.click();
+        Thread.sleep(2000);
+        languagePopUpDismiss.click();
         Assert.assertTrue(laguageTab.isDisplayed());
         System.out.println("Test:  laguageTab passed");
     }
 
 
-    public void countryTab(){
+    public void countryTab() throws InterruptedException {
 
         countryTab.click();
         Assert.assertTrue(countryTab.isDisplayed());
+        Thread.sleep(2000);
+        Select select = new Select(countryWindowPopUp);
+
+        select.selectByValue("au");
+        driver.findElement(By.xpath("//button[@class='a-button-text']")).click();
         System.out.println("Test:  countryTab passed");
     }
 

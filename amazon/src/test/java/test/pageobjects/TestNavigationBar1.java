@@ -12,7 +12,7 @@ public class TestNavigationBar1 extends CommonAPI {
     @BeforeMethod
     public void initilization(){
         objectOfNavBar = PageFactory.initElements(driver, NavigationBarLink1.class);
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
     }
 
     @Test
