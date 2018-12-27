@@ -1,0 +1,1026 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/33</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 26 16:40:24 EST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>96 seconds (96405 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U948LCS&apos;, ip: &apos;10.11.11.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\Saeed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1eb259f-1a0f-49cf-846a-ee1042d1ffbb
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at driverconnectivity.CommonAPI.closeOut(CommonAPI.java:89)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1885922916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1885922916'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U948LCS&apos;, ip: &apos;10.11.11.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\Saeed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1eb259f-1a0f-49cf-846a-ee1042d1ffbb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at driverconnectivity.CommonAPI.closeOut(CommonAPI.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+</pre></div></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.initializationOfOnjects()'><b>initializationOfOnjects</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.initializationOfOnjects()'><b>initializationOfOnjects</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.initializationOfOnjects()'><b>initializationOfOnjects</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.initializationOfOnjects()'><b>initializationOfOnjects</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.initializationOfObject()'><b>initializationOfObject</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.initializationOfObject()'><b>initializationOfObject</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.initializationOfObject()'><b>initializationOfObject</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.initializationOfObject()'><b>initializationOfObject</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.initializationOfObject()'><b>initializationOfObject</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.initilization()'><b>initilization</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.initializationOfObjects()'><b>initializationOfObjects</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.initializationOfObjects()'><b>initializationOfObjects</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.initializationOfObjects()'><b>initializationOfObjects</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.setUp()'><b>setUp</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.initializationOfObjects()'><b>initializationOfObjects</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.setUp()'><b>setUp</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.titleTest()'><b>titleTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.closeOut()'><b>closeOut</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.closeOut()'><b>closeOut</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.amazonPaymentProductsTest()'><b>amazonPaymentProductsTest</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Shop with Points
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U948LCS&apos;, ip: &apos;10.11.11.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1096, moz:profile: C:\Users\Saeed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d0f676b2-77e5-4bcf-a2f2-8b9f3690dd89
+*** Element info: {Using=partial link text, value=Shop with Points}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pageobjects.home.FooterTopLinks.amazonPaymentProducts(FooterTopLinks.java:46)
+	at test.pageobjects.TestFooterTopLinks.amazonPaymentProductsTest(TestFooterTopLinks.java:21)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace335708295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace335708295'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Shop with Points
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U948LCS&apos;, ip: &apos;10.11.11.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1096, moz:profile: C:\Users\Saeed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d0f676b2-77e5-4bcf-a2f2-8b9f3690dd89
+*** Element info: {Using=partial link text, value=Shop with Points}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pageobjects.home.FooterTopLinks.amazonPaymentProducts(FooterTopLinks.java:46)
+	at test.pageobjects.TestFooterTopLinks.amazonPaymentProductsTest(TestFooterTopLinks.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+</pre></div></td>
+<td>60</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.getToKnowUsTest()'><b>getToKnowUsTest</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U948LCS&apos;, ip: &apos;10.11.11.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\Saeed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1eb259f-1a0f-49cf-846a-ee1042d1ffbb
+*** Element info: {Using=partial link text, value=Careers}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pageobjects.home.FooterTopLinks.getToKnowUs(FooterTopLinks.java:32)
+	at test.pageobjects.TestFooterTopLinks.getToKnowUsTest(TestFooterTopLinks.java:34)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176164144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176164144'><pre>org.openqa.selenium.WebDriverException: Failed to convert data to an object
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U948LCS&apos;, ip: &apos;10.11.11.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\Saeed\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a1eb259f-1a0f-49cf-846a-ee1042d1ffbb
+*** Element info: {Using=partial link text, value=Careers}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pageobjects.home.FooterTopLinks.getToKnowUs(FooterTopLinks.java:32)
+	at test.pageobjects.TestFooterTopLinks.getToKnowUsTest(TestFooterTopLinks.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+</pre></div></td>
+<td>3</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.accountListDropDownTest()'><b>accountListDropDownTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.addressTest()'><b>addressTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.cartTest()'><b>cartTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.checkIcon2Test()'><b>checkIcon2Test</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.checkIconTest()'><b>checkIconTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.completeLoginTest()'><b>completeLoginTest</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.countryTabTest()'><b>countryTabTest</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.dropDownBoxTest()'><b>dropDownBoxTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.dropdownListTest()'><b>dropdownListTest</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.emailTest()'><b>emailTest</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.generalLinksTest()'><b>generalLinksTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.giftcards()'><b>giftcards</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.helpTest()'><b>helpTest</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.laguageTabTest()'><b>laguageTabTest</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.letUsHelpYouTest()'><b>letUsHelpYouTest</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.loginTest()'><b>loginTest</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.mainMenuTest()'><b>mainMenuTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestFooterTopLinks.makeMoneyWithUsTest()'><b>makeMoneyWithUsTest</b><br>Test class: test.pageobjects.TestFooterTopLinks</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestFooterTopLinks@13fee20c</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.passwordTest()'><b>passwordTest</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.regular.HomePageTest.primeTryTest()'><b>primeTryTest</b><br>Test class: test.regular.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomePageTest@735f7ae5</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.radioDropDownTest()'><b>radioDropDownTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.registryTest()'><b>registryTest</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.searchBoxEnterTest()'><b>searchBoxEnterTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.searchBoxTest()'><b>searchBoxTest</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.searchBoxTest()'><b>searchBoxTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.searchBoxTextTest()'><b>searchBoxTextTest</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.regular.HomeSearchBoxTest.searchButtonTest()'><b>searchButtonTest</b><br>Test class: test.regular.HomeSearchBoxTest</td>
+<td></td>
+<td>0</td>
+<td>test.regular.HomeSearchBoxTest@180bc464</td></tr>
+<tr>
+<td title='test.pageobjects.TestSeachBox.searchIconTest()'><b>searchIconTest</b><br>Test class: test.pageobjects.TestSeachBox</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestSeachBox@17550481</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.sellTest()'><b>sellTest</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestLogIn.signInButtonTest()'><b>signInButtonTest</b><br>Test class: test.pageobjects.TestLogIn</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestLogIn@3cda1055</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.wholeFoodsTest()'><b>wholeFoodsTest</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.yearEndDealsTest()'><b>yearEndDealsTest</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+<tr>
+<td title='test.pageobjects.TestNavigationBar1.yourAmazonTest()'><b>yourAmazonTest</b><br>Test class: test.pageobjects.TestNavigationBar1</td>
+<td></td>
+<td>0</td>
+<td>test.pageobjects.TestNavigationBar1@4e04a765</td></tr>
+</table><p>
+</body>
+</html>

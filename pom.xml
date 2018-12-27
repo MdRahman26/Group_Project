@@ -12,7 +12,7 @@
         <module>generics</module>
 
         <module>amazon</module>
-
+        <module>watchoutfitter</module>
         <module>WellsFargo</module>
 
     </modules>

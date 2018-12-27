@@ -43,15 +43,13 @@ public class CommonAPI {
             options.addArguments("--start-maximized");
             options.addArguments("--ignore-certificate-errors");
             options.addArguments("--incognito");
-
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-
             if (os.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/drivers/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../generics/drivers/windows/chromedriver.exe");
                 driver = new ChromeDriver(options);
             } else if (os.equalsIgnoreCase("mac")) {
-                System.setProperty("webdriver.chrome.driver", "/Users/khalid.abdin/IdeaProjects/Group_Project/generics/drivers/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../generics/drivers/windows/chromedriver.exe");
                 driver = new ChromeDriver(options);
             }
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -64,15 +62,15 @@ public class CommonAPI {
             options.addArguments("--start-maximized");
             options.addArguments("--ignore-certificate-errors");
             options.addArguments("--private");
-            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+            /*DesiredCapabilities capabilities = DesiredCapabilities.firefox();
             capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
-
+*/
 
             if (os.equalsIgnoreCase("windows")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/drivers/windows/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "../generics/drivers/chromedriver.exe");
                 driver = new FirefoxDriver(options);
             } else if (os.equalsIgnoreCase("mac")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/drivers/mac/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "../generics/drivers/chromedriver.exe");
                 driver = new FirefoxDriver(options);
             }
         }

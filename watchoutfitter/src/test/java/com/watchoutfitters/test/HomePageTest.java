@@ -2,7 +2,6 @@ package com.watchoutfitters.test;
 
 import com.watchoutfitters.pages.HomePage;
 import driverconnectivity.CommonAPI;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
