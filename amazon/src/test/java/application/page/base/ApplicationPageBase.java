@@ -86,4 +86,16 @@ public class ApplicationPageBase extends BrowserDriver {
         TestLogger.log("enter "+keys+" to "+ nameOfElement);
     }
 
+
+    // test for reading different department name on amazon
+    public static String getDepartmentName(WebElement webElement){
+
+        String departmentName = webElement.getText();
+
+        return departmentName;
+    }
+
+
+
+
 }

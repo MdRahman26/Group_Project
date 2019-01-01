@@ -46,18 +46,18 @@ public class SearchBox extends BrowserDriver {
     }
 
     public void searchTextBox(String enterSearchWord){
-        TestLogger.log("Sending KeyWord");
+        TestLogger.log("Sending :"+enterSearchWord);
         searchTextBox.sendKeys(enterSearchWord);
-        TestLogger.log("Keys arrived");
+        TestLogger.log(enterSearchWord+" :arrived");
         searchTextBox.sendKeys(Keys.ENTER);
         TestLogger.log("Enter Pressed");
 
     }
 
-    public void searchIcon() throws InterruptedException {
+    public void searchIcon(String enterSearchWord){
         nameOfElement ="Search Icon";
-        searchTextBox("Something");
-        Thread.sleep(2000);
+        searchTextBox(enterSearchWord);
+//        Thread.sleep(2000);
 
         Actions mouse = new Actions(driver);
         mouse.moveToElement(searchIcon).build().perform();

@@ -38,7 +38,7 @@ public class TestSearchBox extends BrowserDriver {
     @Test (groups = "main")
     public void searchIconTest() throws InterruptedException {
 
-        objectOfSearchBox.searchIcon();
+        objectOfSearchBox.searchIcon("Something");
     }
 
 }
