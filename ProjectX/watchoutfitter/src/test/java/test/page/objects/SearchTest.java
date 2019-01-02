@@ -1,5 +1,6 @@
 package test.page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +22,7 @@ public class SearchTest  extends CommonAPI {
     @Test
     public void searchBarTest(){
         objOfSearchPage.searchBar();
+
 
 
         }

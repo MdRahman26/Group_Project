@@ -1,5 +1,6 @@
 package page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,12 +25,13 @@ public class SearchTextPage extends CommonAPI {
 
 
     public void searchBar() {
-        searchIcon.click();
-        searchTextBox.sendKeys("watches");
-        searchButton.click();
-        String actualtext =text.getText();
+        ApplicationPageBase.click(searchIcon,"searchIcon");
+        ApplicationPageBase.isEnableStatus(driver,searchIcon);
+        ApplicationPageBase.sendKeys(searchTextBox,"searchTextBox","watches");
+        ApplicationPageBase.click(searchButton,"searchButton");
+        String actualtext =ApplicationPageBase.getText(text,"text");
         Assert.assertEquals(actualtext,"PERFECT SKULL WATCH AND FREE HAND-MADE EMBROIDERY PURSE BUNDLE");
-        TestLogger.log("Textmathes for verification");
+
 
 
 

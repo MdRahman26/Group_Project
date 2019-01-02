@@ -1,10 +1,12 @@
 package page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import reporting.TestLogger;
 
 import java.util.List;
 
@@ -78,56 +80,52 @@ public class HomePage extends CommonAPI {
     private WebElement hovover;
 
     public void clickingBrandLink() {
-        brandLink.click();
-        Assert.assertEquals(true, brandLink.isEnabled());
-        System.out.println("Brand Link Clicked");
-    }
+        ApplicationPageBase.click(brandLink,"brandLink");
 
+    }
     public void clickingContactUsLink(){
 
-        contactUsButton.click();
-        Assert.assertEquals(true, contactUsButton.isEnabled());
-        System.out.println("Brand Link Clicked");
+        ApplicationPageBase.click(contactUsButton,"contactUsButton");
+
     }
 
     public void outfitterAndEmailLinks(){
 
         watchOutfittersLogo.isDisplayed();
+        TestLogger.log("watchoutfitters logo is displayed");
         emailIcon.isDisplayed();
         Assert.assertEquals(true, emailIcon.isDisplayed());
     }
 
     public void searchLink(){
 
-        searchIcon.click();
+        ApplicationPageBase.click(searchIcon,"searchIcon");
         searchIcon.isEnabled();
     }
 
-    public LogInPage getLogInPage() {
-        logInIcon.click();
-        return new LogInPage();
+    public void logInIon() {
+        ApplicationPageBase.click(logInIcon,"logInIcon");
+        TestLogger.log("Login page is displayed");
+
     }
 
     public void shoppingCartLink(){
 
-        shoppingCartIcon.click();
-        String text = title.getText();
+        ApplicationPageBase.click(shoppingCartIcon,"shoppingCartIcon");
+        String text = ApplicationPageBase.getText(title,"title");
         Assert.assertEquals(text, "CONTINUE SHOPPING");
     }
 
     public void shopNowLinkAndLeftRightArrows(){
 
-        shopNowActionButton.click();
-        String s = text1.getText();
-        Assert.assertEquals(s, "BEST SELLERS");
-        rightIconArrow.click();
-        Assert.assertEquals(true, rightIconArrow.isEnabled());
-        leftIconArrow.click();
-        Assert.assertEquals(true, leftIconArrow.isEnabled());
+        ApplicationPageBase.click(shopNowActionButton,"shopNowActionButton");
+        ApplicationPageBase.getText(text1,"text1");
+        Assert.assertEquals(text1, "BEST SELLERS");
+        ApplicationPageBase.click(rightIconArrow,"rightIconArrow");
+        ApplicationPageBase.click(leftIconArrow,"leftIconArrow");
         featuredWatchesSection.isDisplayed();
-        quartaWatch.click();
-        Assert.assertEquals(true, quartaWatch.isEnabled());
-        System.out.println("link is clickable");
+        ApplicationPageBase.click(quartaWatch,"quartaWatch");
+        TestLogger.log("All the links are displayed and working properly");
     }
 
     public void shopHoverOverMenu() throws InterruptedException {
@@ -142,6 +140,7 @@ public class HomePage extends CommonAPI {
         }
         for (WebElement titles:dm){
             System.out.println(titles.getText());
+            TestLogger.log("Hovermenu and getting titles");
         }
     }
 

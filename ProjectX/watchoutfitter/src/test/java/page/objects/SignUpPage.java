@@ -1,5 +1,6 @@
 package page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,15 +32,13 @@ public class SignUpPage extends CommonAPI {
     private WebElement signUpButton;
 
     public void signUpPage() throws InterruptedException {
-        myAccountIcon.click();
-        signUpLink.click();
-        fName.sendKeys("hamad");
-        lName.sendKeys("hussain");
-        email.sendKeys("hamad@yahoo.com");
-        pass.sendKeys("khan12");
-        signUpButton.click();
-        TestLogger.log("user landed on Homepage");
-
+        ApplicationPageBase.click(myAccountIcon,"myAccountIcon");
+        ApplicationPageBase.click(signUpLink,"signUpLink");
+        ApplicationPageBase.sendKeys(fName,"FirstName","Ziyad");
+        ApplicationPageBase.sendKeys(lName,"LastName","Hussain");
+        ApplicationPageBase.sendKeys(email,"Email","hussain.ziyad90@gmail.com");
+        ApplicationPageBase.sendKeys(pass,"Password","Allah1212");
+        ApplicationPageBase.click(signUpButton,"signUpButton");
 
     }
 }

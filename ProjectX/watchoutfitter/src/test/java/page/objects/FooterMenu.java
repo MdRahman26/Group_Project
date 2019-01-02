@@ -1,5 +1,6 @@
 package page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,31 +45,31 @@ public class FooterMenu extends CommonAPI {
     }
 
     public void faqLink() {
-        faqLink.click();
-        Assert.assertEquals(true, faqLink.isEnabled());
+        ApplicationPageBase.click(faqLink,"helpCenterLink");
     }
+
     public void giftCardLink() {
-        giftCardLink.click();
-        Assert.assertEquals(true, giftCardLink.isEnabled());
+       ApplicationPageBase.click(giftCardLink,"giftCardLink");
+
     }
     public void searchLink() {
-        searchLink.click();
-        Assert.assertEquals(true, searchLink.isEnabled());
+        ApplicationPageBase.click(searchLink,"searchLink");
+
     }
     public void aboutUsLink() {
-        aboutUsLink.click();
-        Assert.assertEquals(true, aboutUsLink.isEnabled());
+        ApplicationPageBase.click(aboutUsLink,"aboutUsLink");
+
     }
     public void contactUsLink() {
-        contactUsLink.click();
-        Assert.assertEquals(true, contactUsLink.isEnabled());
+        ApplicationPageBase.click(contactUsLink,"contactUsLink");
+
     }
     public void privacyPolicyLink() {
-        privacyPolicyLink.click();
-        Assert.assertEquals(true, privacyPolicyLink.isEnabled());
+        ApplicationPageBase.click(privacyPolicyLink,"privacyPolicyLink");
+
     }
     public void refundPolicyLink(){
-        refundPolicyLink.click();
-        Assert.assertEquals(true,refundPolicyLink.isEnabled());
+        ApplicationPageBase.click(refundPolicyLink,"refundPolicyLink");
+
     }
 }

@@ -1,5 +1,6 @@
 package page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,23 +35,22 @@ public class ContactUsPage extends CommonAPI {
     private WebElement submitButton;
 
     public void ContactusLink() {
-        contactUsLink.click();
-        String text = title.getText();
+        ApplicationPageBase.click(contactUsLink,"contactUsLink");
+       String text= ApplicationPageBase.getText(title,"title");
         Assert.assertEquals(text, "CONTACT US");
-        System.out.println("Contact Us page is displayed");
+
     }
     public void enteringData() {
-        contactUsLink.click();
-        funame.sendKeys("Ziyad Hussain");
-        email.sendKeys("hussain.ziyad90@gmail.com");
-        message.sendKeys("Hi this is a test case");
-        submitButton.click();
-        Assert.assertEquals(false, submitButton.isEnabled());
+        ApplicationPageBase.click(contactUsLink,"contactUsLink");
+        ApplicationPageBase.sendKeys(funame,"Firstname","Ziyad");
+        ApplicationPageBase.sendKeys(email,"email","hussain.ziyad90@gmail.com");
+        ApplicationPageBase.sendKeys(message,"messageBox","This is a test case");
+        ApplicationPageBase.click(submitButton,"submitButton");
 
     }
     public void helpCenter(){
-        contactUsLink.click();
-        helpCenterLink.click();
+        ApplicationPageBase.click(contactUsLink,"contactUsLink");
+        ApplicationPageBase.click(helpCenterLink,"helpCenterLink");
         Assert.assertEquals(true,helpCenterLink.isEnabled());
 
 

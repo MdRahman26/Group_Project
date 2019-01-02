@@ -1,5 +1,6 @@
 package page.objects;
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -70,8 +71,8 @@ public class ShoppingCartPage extends CommonAPI {
  private WebElement phoneAndEmailAddressTextBox;
 
  public void selectingAWatch() {
-  quartaWatch.click();
-
+  ApplicationPageBase.click(quartaWatch,"quartaWatch");
+  ApplicationPageBase.isEnableStatus(driver,quartaWatch);
   Select drpDown = new Select(colordropDownMenu);
   drpDown.selectByVisibleText("Gold/Black");
   addToCartButton.submit();
@@ -84,16 +85,16 @@ public class ShoppingCartPage extends CommonAPI {
   }
 
   phoneAndEmailAddressTextBox.sendKeys("hussain@gmail.com");
-   firstName.sendKeys("Ziyad");
-   lastName.sendKeys("Hussain");
-   address.sendKeys("150 12 Horace Harding Expwy");
-   apartment.sendKeys("7b");
-   city.sendKeys("FreshMeadows");
-   zipCode.sendKeys("11367");
-   phoneNo.sendKeys("1234567809");
-   continueToShoppingButton.click();
-   continuePaymentButton.click();
-   completeOrderButton.click();
+   ApplicationPageBase.sendKeys(firstName,"firstName","Ziyad");
+   ApplicationPageBase.sendKeys(lastName,"lastName","Hussain");
+   ApplicationPageBase.sendKeys(address,"address","123 test street");
+   ApplicationPageBase.sendKeys(apartment,"apartment","2f");
+   ApplicationPageBase.sendKeys(city,"city","Flushing");
+   ApplicationPageBase.sendKeys(zipCode,"zipCode","11233");
+   ApplicationPageBase.sendKeys(phoneNo,"phoneNo","1236759898");
+   ApplicationPageBase.click(continueToShoppingButton,"continueToShoppingButton");
+   ApplicationPageBase.click(continuePaymentButton,"continuePaymentButton");
+   ApplicationPageBase.click(completeOrderButton,"completeOrderButton");
 
   }
 

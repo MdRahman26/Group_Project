@@ -19,7 +19,7 @@ import static application.page.base.ApplicationPageBase.loadProperties;
 
 public class LogInUsingGoogleApiTest extends CommonAPI {
 
-    LogInPage objLoginPage = null;
+    LogInPage objLoginPage =null;
     HomePage objHomePage = null;
 
 
@@ -47,7 +47,7 @@ public class LogInUsingGoogleApiTest extends CommonAPI {
     @Test(dataProvider = "googleSheet")
     public  void invalidSignIn(String email, String password, String expectedErrorMessage){
 
-        objHomePage.getLogInPage();
+        objLoginPage.getLogInPage();
         objLoginPage.login(email, password);
         String expectedText = expectedErrorMessage;
         String actualText = objLoginPage.getErrorMessage();
@@ -64,7 +64,7 @@ public class LogInUsingGoogleApiTest extends CommonAPI {
         TestLogger.log("Using Sheet Number " + range.charAt(5)+ " and fields range  " + range.substring(6));
         List<List<Object>> getRecords = GoogleSheetReader.getSpreadSheetRecords(spreadsheetId,range);
 
-        objHomePage.getLogInPage();
+        objLoginPage.getLogInPage();
 
         for (List cell: getRecords) {
 

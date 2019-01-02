@@ -1,6 +1,7 @@
 package test.page.objects;
 
 
+import application.page.base.ApplicationPageBase;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
@@ -22,6 +23,7 @@ public class FooterMenuTest extends CommonAPI {
     @Test
     public void faqLinkTest(){
         objOfFooterMenu.faqLink();
+
     }
     @Test
     public void giftCardLinkTest(){
