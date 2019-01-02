@@ -93,7 +93,7 @@ public class BrowserDriver {
                       @Optional("windows") String os, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("34")
                               String browserVersion, @Optional("https://www.google.com") String url) throws IOException {
         getLocalDriver(browserName, os);
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); // 20
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS); // 20
         driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS); //35
         //driver.manage().window().maximize();
         driver.get(url);

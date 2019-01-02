@@ -57,8 +57,6 @@ public class LogInPageTest extends BrowserDriver {
         objOfLogInPage.getlogin();
 
         objOfLogInPage.login(emailaddress,enterpassword);
-
-
     }
 
 

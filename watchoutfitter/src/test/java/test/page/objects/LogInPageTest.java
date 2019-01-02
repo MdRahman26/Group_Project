@@ -24,7 +24,7 @@ public class LogInPageTest extends BrowserDriver {
     public void initializationOfElements() {
         objOfLoginPage = PageFactory.initElements(driver, LogInPage.class);
     }
-
+/*
     @Test
     public void LogInTest() {
         objOfLoginPage.InvalidLogIn();
@@ -35,7 +35,7 @@ public class LogInPageTest extends BrowserDriver {
     public void ValidLogInTest() {
         objOfLoginPage.ValidLogIn();
 
-    }
+    }*/
 
 
     @DataProvider(name="DP")

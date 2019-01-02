@@ -15,12 +15,12 @@
 
     <test name = "Amazon Home">
         <classes>
-         <!--   <class name="test.pageobjects.TestLogIn"/>
-        <class name="test.pageobjects.LogInPageTest"/>
-        <class name="test.pageobjects.LogInUsingGoogleApiTest"/>
-                        <class name="test.pageobjects.TestSearchBox"/>
-                            <class name="test.pageobjects.TestShoppingCart"/>-->
-                             <class name="test.pageobjects.TestNavigationBarLink"/>
+            <!--   <class name="test.pageobjects.TestLogIn"/>
+            <class name="test.pageobjects.LogInPageTest"/>
+            <class name="test.pageobjects.TestNavigationBarLink"/>
+           <class name="test.pageobjects.LogInUsingGoogleApiTest"/>
+                  <class name="test.pageobjects.TestSearchBox"/>
+                               <class name="test.pageobjects.TestShoppingCart"/>-->
             <!--<class name="test.pageobjects.SearchBoxExcelTest"/>
             <class name="test.pageobjects.TestFooterTopLinks"/>
 -->
