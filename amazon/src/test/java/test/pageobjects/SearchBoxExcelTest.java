@@ -39,11 +39,6 @@ public class SearchBoxExcelTest extends BrowserDriver {
        return data;
    }
 
-
-
-
-
-
     @Test(dataProvider = "Diff_Section")
     public void differentSectionTest(String product_search, String confirm_message) {
 
@@ -55,26 +50,5 @@ public class SearchBoxExcelTest extends BrowserDriver {
         Assert.assertEquals(returnText,confirm_message);
 
     }
-
-
-
-        //
-/*
-
-
-    public void macbook(){
-        objOfSearchBox.searchIcon("Aeron Chair");
-
-        String returnText = ApplicationPageBase.getDepartmentName(elmOfSearchBox.getAeronChair());
-
-
-    }
-
-*/
-
-
-
-
-
 
 }

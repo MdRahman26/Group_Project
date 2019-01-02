@@ -30,8 +30,8 @@ public class LogInUsingGoogleApiTest extends BrowserDriver {
     public void invalidSigninByGoogleSheetApi() throws IOException {
 
         Properties properties = loadProperties();
-        String spreadsheetId = properties.getProperty("GOOGLE.spreadsheetId");
-        String range = properties.getProperty("GOOGLE.range");
+        String spreadsheetId = properties.getProperty("GOOGLE.spreadsheetId1");
+        String range = properties.getProperty("GOOGLE.range1");
         TestLogger.log("Using Sheet Number " + range.charAt(5) + " and fields range  " + range.substring(6));
         List<List<Object>> getRecords = GoogleSheetReader.getSpreadSheetRecords(spreadsheetId, range);
 
