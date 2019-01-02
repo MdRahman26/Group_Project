@@ -47,6 +47,8 @@ public class SearchBox extends BrowserDriver {
 
     public void searchTextBox(String enterSearchWord){
         TestLogger.log("Sending :"+enterSearchWord);
+
+        searchTextBox.clear();
         searchTextBox.sendKeys(enterSearchWord);
         TestLogger.log(enterSearchWord+" :arrived");
         searchTextBox.sendKeys(Keys.ENTER);
@@ -74,7 +76,6 @@ public class SearchBox extends BrowserDriver {
     public WebElement getSearchIcon(){
         return searchIcon;
     }
-
 
 
 }
