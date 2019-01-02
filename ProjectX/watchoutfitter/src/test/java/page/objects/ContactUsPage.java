@@ -40,6 +40,7 @@ public class ContactUsPage extends CommonAPI {
         System.out.println("Contact Us page is displayed");
     }
     public void enteringData() {
+        contactUsLink.click();
         funame.sendKeys("Ziyad Hussain");
         email.sendKeys("hussain.ziyad90@gmail.com");
         message.sendKeys("Hi this is a test case");
@@ -48,6 +49,7 @@ public class ContactUsPage extends CommonAPI {
 
     }
     public void helpCenter(){
+        contactUsLink.click();
         helpCenterLink.click();
         Assert.assertEquals(true,helpCenterLink.isEnabled());
 

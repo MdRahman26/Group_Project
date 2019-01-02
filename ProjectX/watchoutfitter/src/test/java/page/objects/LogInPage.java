@@ -54,6 +54,7 @@ public class LogInPage extends CommonAPI {
 
     public LogInPage login(String em, String pass) {
 
+        logInIcon.click();
         sendKeys(email, "emailBox", em);
         sendKeys(password, "passwordBox", pass);
         click(signInButton, "submitButton");

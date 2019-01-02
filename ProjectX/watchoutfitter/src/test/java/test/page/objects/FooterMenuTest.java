@@ -45,7 +45,7 @@ public class FooterMenuTest extends CommonAPI {
     }
     @Test
     public void refundPolicyLinkTest(){
-        objOfFooterMenu.privacyPolicyLink();
+        objOfFooterMenu.refundPolicyLink();
     }
 
 }

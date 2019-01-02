@@ -20,7 +20,7 @@ public class HomePage extends CommonAPI {
     @FindBy(className ="arrow")
     private WebElement shopHoverOverMenu;
 
-    @FindBy(xpath = "//*[contains(text(),'Conta')]")
+    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[2]/a")
     private WebElement contactUsButton;
 
     @FindBy(className = "primary_logo")
@@ -32,7 +32,7 @@ public class HomePage extends CommonAPI {
     @FindBy(id = "search-toggle")
     private WebElement searchIcon;
 
-    @FindBy(className = "icon-cart cart-button")
+    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[6]/a")
     private WebElement shoppingCartIcon;
 
     @FindBy(xpath = "//*[@id=\"shopify-section-1482527966363\"]/section/ul[1]/li[1]/a/img")
