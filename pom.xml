@@ -11,6 +11,8 @@
 
     <modules>
         <module>generic</module>
+        <module>amazon</module>
+        <module>watchoutfitter</module>
     </modules>
     <dependencyManagement>
         <dependencies>

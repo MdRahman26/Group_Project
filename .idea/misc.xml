@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/generic/pom.xml" />
+        <option value="$PROJECT_DIR$/amazon/pom.xml" />
+        <option value="$PROJECT_DIR$/ProjectX/watchoutfitter/pom.xml" />
+        <option value="$PROJECT_DIR$/watchoutfitter/pom.xml" />
       </list>
     </option>
   </component>

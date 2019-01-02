@@ -2,12 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cea38ec-e316-4b4f-b2d0-b13c769a8fab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/.credentials/sheets-googleapis/StoredCredential" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/Extent-Report/ExtentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/application/page/base/ApplicationPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/ContactUsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/FooterMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/LogInPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/SearchTextPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/ShoppingCartPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/page/objects/SignUpPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/ContactsUsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/FooterMenuTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/HomePageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/LogInPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/LogInUsingGoogleApiTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/SearchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/ShoppingCartTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/java/test/page/objects/SignUpPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/resources/Properties.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/resources/client_secret.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/src/test/resources/secret.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/testData/TestData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectX/watchoutfitter/watchoutfitter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/src/test/resources/amazonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/src/test/resources/amazonTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/amazonTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/application/page/base/ApplicationPageBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/client_secret.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/FooterTopLinks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/LogIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/LogInPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/NavigationBarLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/SeachBoxElementsForExcel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/SearchBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/page/objects/ShoppingCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/secret.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/LogInPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/LogInUsingGoogleApiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/SearchBoxExcelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestFooterTopLinks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestLogIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestNavigationBarLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestSearchBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/target/test-classes/test/pageobjects/TestShoppingCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/generic/target/" />
+    <ignored path="$PROJECT_DIR$/amazon/target/" />
+    <ignored path="$PROJECT_DIR$/ProjectX/watchoutfitter/target/" />
+    <ignored path="$PROJECT_DIR$/watchoutfitter/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +74,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/generic/pom.xml" />
+        <option value="$PROJECT_DIR$/amazon/src/test/resources/amazonTest.xml" />
+        <option value="$PROJECT_DIR$/ProjectX/watchoutfitter/pom.xml" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/ContactUsPage.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/application/page/base/ApplicationPageBase.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/FooterMenu.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/HomePage.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/LogInPage.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/SearchTextPage.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/ShoppingCartPage.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/ContactsUsTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/FooterMenuTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/HomePageTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/LogInPageTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/SearchTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/ShoppingCartTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/SignUpPageTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/LogInUsingGoogleApiTest.java" />
+        <option value="$PROJECT_DIR$/watchoutfitter/src/test/resources/Properties.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -43,19 +112,34 @@
           <expand>
             <path>
               <item name="group_afnan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GroupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="group_afnan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="amazon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="group_afnan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Group_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="watchoutfitter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545946267721" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JihadRepo/2nd/webautomationnov18" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546402180472" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Afnan\Desktop\Developer\Group_Project\ProjectX\watchoutfitter" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,6 +152,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/Afnan/Desktop/Developer/Group_Project/amazon/src/test/resources/amazonTest.xml">
+    <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/amazon/src/test/resources/amazonTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="amazon" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/amazon/src/test/resources/amazonTest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/watchoutfitter/src/test/resources/Properties.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="watchoutfitter" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/watchoutfitter/src/test/resources/Properties.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/Afnan/Desktop/Developer/Group_Project/amazon/src/test/resources/amazonTest.xml" />
+        <item itemvalue="TestNG.C:/Users/Afnan/Desktop/Developer/Group_Project/watchoutfitter/src/test/resources/Properties.xml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -82,6 +194,23 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="C__Users_Afnan_Desktop_Developer_Group_Project_amazon_src_test_resources_amazonTest_xml - 2019.01.01 at 22h 22m 02s.xml">
+      <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/amazon/src/test/resources/amazonTest.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Afnan_Desktop_Developer_Group_Project_watchoutfitter_src_test_resources_Properties_xml - 2019.01.01 at 22h 41m 04s.xml">
+      <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/watchoutfitter/src/test/resources/Properties.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Afnan_Desktop_Developer_Group_Project_watchoutfitter_src_test_resources_Properties_xml - 2019.01.01 at 22h 46m 26s.xml">
+      <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/watchoutfitter/src/test/resources/Properties.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Afnan_Desktop_Developer_Group_Project_watchoutfitter_src_test_resources_Properties_xml - 2019.01.01 at 23h 01m 29s.xml">
+      <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/watchoutfitter/src/test/resources/Properties.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Afnan_Desktop_Developer_Group_Project_amazon_src_test_resources_amazonTest_xml - 2019.01.01 at 23h 03m 41s.xml">
+      <configuration name="C:/Users/Afnan/Desktop/Developer/Group_Project/amazon/src/test/resources/amazonTest.xml" configurationId="TestNG" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <layout>
@@ -90,18 +219,19 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24949698" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2562039" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.9575672" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32956153" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -115,13 +245,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/group_afnan.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generic/src/main/java/base/BrowserDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generic/src/main/java/com/util/xlsx/reader/MyDataReader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -179,17 +302,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generic/src/main/java/sheet/google/api/GoogleSheetReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/test/resources/amazonTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="3" selection-start-line="23" selection-start-column="12" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectX/watchoutfitter/Extent-Report/ExtentReport.html" />
+    <entry file="file://$PROJECT_DIR$/ProjectX/watchoutfitter/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/application/page/base/ApplicationPageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/ContactUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/FooterMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/LogInPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/SearchTextPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/ShoppingCartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/page/objects/SignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/ContactsUsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/FooterMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/HomePageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/LogInPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/SearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/ShoppingCartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/SignUpPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/resources/client_secret.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/resources/secret.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/java/test/page/objects/LogInUsingGoogleApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generic/src/main/java/base/BrowserDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/src/test/resources/Properties.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/screenshots/enteringDataTest (01.01.2019-22">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/Extent-Report/ExtentReport.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchoutfitter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
