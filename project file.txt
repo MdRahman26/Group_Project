@@ -1,0 +1,12 @@
+
+
+1) Clone master (updated all dependency from Jihad bhai file)
+
+
+2) Run test on BrowserDriver need to change only path. 
+
+3) need to push only your Website folder in your respective branch.
+   before pushing make sure there is no idea,target folder or generics.
+   
+
+
