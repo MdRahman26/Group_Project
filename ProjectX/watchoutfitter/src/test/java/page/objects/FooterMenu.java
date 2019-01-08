@@ -1,75 +1,149 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
+import base.BrowserDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import reporting.TestLogger;
 
-public class FooterMenu extends CommonAPI {
-    @FindBy(className = "contact_email")
+import static application.page.base.ApplicationPageBase.click;
+import static application.page.base.ApplicationPageBase.sendKeys;
+
+public class FooterMenu extends ApplicationPageBase {
+    @FindBy(xpath = "//input[@placeholder='Enter your email address...']")
     private WebElement emailTextBox;
 
-    @FindBy(xpath = "//*[@id=\"contact_form\"]/input[6]")
+    @FindBy(xpath = "//input[@value='Sign Up']")
     private WebElement signUpButton;
-    @FindBy(xpath = "//*[@id=\"contact_form\"]/p/em")
-    private WebElement thankYouMessage;
+    @FindBy(xpath = "//p[@class='message']")
+    private WebElement verifyThankYoutText;
 
-    @FindBy(css = "#shopify-section-footer > div.sub-footer > div > div:nth-child(2) > ul > li:nth-child(1) > a")
+    @FindBy(xpath = "//a[@title='FAQs']")
     private WebElement faqLink;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-footer\"]/div[1]/div/div[2]/ul/li[2]/a")
-    private WebElement giftCardLink;
+    @FindBy(xpath = "//h1[contains(text(),'Help Center')]")
+    private WebElement faqPageVerification;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-footer\"]/div[1]/div/div[2]/ul/li[3]/a")
+    @FindBy(xpath = "//a[contains(text(),'Search')]")
     private WebElement searchLink;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-footer\"]/div[1]/div/div[2]/ul/li[4]/a")
+    @FindBy(className = "quote")
+    private WebElement verifySearchLink;
+
+    @FindBy(xpath = "//a[@title='Gift Cards']")
+    private WebElement giftCardLink;
+
+    @FindBy(xpath = "//p[@class='quote']")
+    private WebElement verifyGiftCardLink;
+
+
+    @FindBy(xpath = "//a[@title='About us']")
     private WebElement aboutUsLink;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-footer\"]/div[1]/div/div[2]/ul/li[5]/a")
+    @FindBy(className = "collection_title")
+    private WebElement verifyAboutUsLink;
+
+    @FindBy(xpath = "//a[@title='Contact us']")
     private WebElement contactUsLink;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-footer\"]/div[1]/div/div[2]/ul/li[6]/a")
+    @FindBy(className = "collection_title")
+    private WebElement verifyContactUsLink;
+
+    @FindBy(xpath = "//a[@title='Privacy policy']")
     private WebElement privacyPolicyLink;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-footer\"]/div[1]/div/div[2]/ul/li[7]/a")
+    @FindBy(className = "collection_title")
+    private WebElement verifyPrivacyPolicyLink;
+
+    @FindBy(xpath = "//a[@title='Refund Policy']")
     private WebElement refundPolicyLink;
+
+    @FindBy(className = "collection_title")
+    private WebElement verifyRefundPolicyLink;
 
 
     public void newAndUpdatesSection() throws InterruptedException {
-        emailTextBox.sendKeys("khan12@gmail.com");
-        signUpButton.click();
-        Assert.assertEquals(true,signUpButton.isEnabled());
+        sendKeys(emailTextBox, "emailTextBox", "tester@gmail.com");
+        click(signUpButton, "signUpButton");
 
     }
 
     public void faqLink() {
-        ApplicationPageBase.click(faqLink,"helpCenterLink");
+        click(faqLink, "helpCenterLink");
     }
 
     public void giftCardLink() {
-       ApplicationPageBase.click(giftCardLink,"giftCardLink");
+        click(giftCardLink, "giftCardLink");
 
     }
+
     public void searchLink() {
-        ApplicationPageBase.click(searchLink,"searchLink");
+        click(searchLink, "searchLink");
 
     }
+
     public void aboutUsLink() {
-        ApplicationPageBase.click(aboutUsLink,"aboutUsLink");
+        click(aboutUsLink, "aboutUsLink");
 
     }
+
     public void contactUsLink() {
-        ApplicationPageBase.click(contactUsLink,"contactUsLink");
+        click(contactUsLink, "contactUsLink");
 
     }
+
     public void privacyPolicyLink() {
-        ApplicationPageBase.click(privacyPolicyLink,"privacyPolicyLink");
+        click(privacyPolicyLink, "privacyPolicyLink");
 
     }
-    public void refundPolicyLink(){
-        ApplicationPageBase.click(refundPolicyLink,"refundPolicyLink");
+
+    public void refundPolicyLink() {
+        click(refundPolicyLink, "refundPolicyLink");
 
     }
+
+    public WebElement getSignUpbuttonVerification() {
+        TestLogger.log("User succesfully signed up for news and updates");
+
+        return signUpButton;
+    }
+
+    public WebElement getFaqPageVerification() {
+
+        return faqPageVerification;
+    }
+
+    public WebElement getVerifySearchLink() {
+        TestLogger.log("search anything in our shop text displayed ");
+
+        return verifySearchLink;
+    }
+
+    public WebElement getAboutUsLink() {
+        TestLogger.log("about us page displayed");
+
+        return verifyAboutUsLink;
+    }
+
+    public WebElement getContactUsLink() {
+        TestLogger.log("contact us page is displayed");
+
+        return verifyContactUsLink;
+    }
+
+    public WebElement getPrivacyPolicyLink() {
+        TestLogger.log("privacy policy page is displayed");
+
+        return verifyPrivacyPolicyLink;
+    }
+
+    public WebElement getRefundPolicyLink() {
+        TestLogger.log("Refund policy page is displayed");
+
+        return refundPolicyLink;
+    }
+
+
 }
+

@@ -1,6 +1,6 @@
 package application.page.base;
 
-import base.CommonAPI;
+import base.BrowserDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import reporting.TestLogger;
@@ -11,13 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public  class ApplicationPageBase extends CommonAPI {
-    /*
-    * @author Jahidul Islam
-    * All commonly used helper methods should be created here
-    *
-    * */
-    String pageUrl;
+public  class ApplicationPageBase extends BrowserDriver {
 
 
 

@@ -1,15 +1,14 @@
 package test.page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
-import junit.framework.Assert;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.objects.HomePage;
 
 
-public class HomePageTest extends CommonAPI {
+public class HomePageTest extends ApplicationPageBase {
 
     HomePage objOfHomePage = null;
 
@@ -19,39 +18,46 @@ public class HomePageTest extends CommonAPI {
     }
 
     @Test
+    public void brandLinkTest() {
+        objOfHomePage.clickingBrandLink();
+        Assert.assertTrue(objOfHomePage.getVerifyBrandLink().isDisplayed());
+    }
+
+    @Test
     public void contactUsLinkTest() {
         objOfHomePage.clickingContactUsLink();
+        Assert.assertTrue(objOfHomePage.getVerifyContactUsLink().isDisplayed());
 
     }
 
     @Test
-    public void logoAndEmailTest() {
-        objOfHomePage.outfitterAndEmailLinks();
+    public void emailLinkTest() {
+        objOfHomePage.emailIconLink();
+        Assert.assertTrue(objOfHomePage.getEmailIcon().isEnabled());
+
     }
+
     @Test
-    public void shopMenuTest(){
-        objOfHomePage.shopNowLinkAndLeftRightArrows();
+    public void loginIconTest() {
+        objOfHomePage.logInIcon();
+        Assert.assertTrue(objOfHomePage.getVerifyLogInIconPage().isDisplayed());
     }
+
     @Test
-    public void logoIconTest(){
-        objOfHomePage.logInIon();
-    }
-     @Test
-     public void searchLinkTest(){
+    public void searchLinkTest() {
         objOfHomePage.searchLink();
-     }
-     @Test
-    public void shoppingCartLinkTest(){
+    }
+
+    @Test
+    public void shoppingCartLinkTest() {
         objOfHomePage.shoppingCartLink();
-     }
-     @Test
+
+    }
+
+    @Test
     public void shopHoverOverMenuTest() throws InterruptedException {
         objOfHomePage.shopHoverOverMenu();
-     }
-
-
-
-
+    }
 
 
 }

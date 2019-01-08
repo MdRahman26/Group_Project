@@ -1,148 +1,150 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 import reporting.TestLogger;
 
 import java.util.List;
 
-public class HomePage extends CommonAPI {
+
+public class HomePage extends ApplicationPageBase {
 
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[2]/a")
+    @FindBy(xpath = "//a[contains(@class,'top-link')][contains(text(),'Brand')]")
     private WebElement brandLink;
+
+    @FindBy(className = "collection_title")
+    private WebElement verifyBrandLink;
 
     @FindBy(className = "icon-account")
     private WebElement logInIcon;
 
-    @FindBy(className ="arrow")
+    @FindBy(className = "collection_title")
+    private WebElement verifyLogInIconPage;
+
+    @FindBy(xpath = "//span[@class='arrow']")
     private WebElement shopHoverOverMenu;
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[2]/a")
+    @FindBy(xpath = "//a[contains(@class,'top-link')][contains(text(),'Contact Us')]")
     private WebElement contactUsButton;
 
-    @FindBy(className = "primary_logo")
-    private WebElement watchOutfittersLogo;
+    @FindBy(className = "collection_title")
+    private WebElement verifyContactUsLink;
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/span/li[3]/a")
+    @FindBy(xpath = "//span[@class='js-social-icons']//li[@class='email']")
     private WebElement emailIcon;
 
-    @FindBy(id = "search-toggle")
+    @FindBy(xpath = "//a[@id='search-toggle']")
     private WebElement searchIcon;
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[6]/a")
+    @FindBy(xpath = "//a[@class='icon-cart cart-button']//span[contains(text(),'Cart')]")
     private WebElement shoppingCartIcon;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-1482527966363\"]/section/ul[1]/li[1]/a/img")
-    private WebElement homePage;
+    @FindBy(xpath = "//a[@class='mm-subclose continue']")
+    private WebElement verifyShoppingCartLink;
 
-    @FindBy(xpath = "//*[@id=\"mm-2\"]/ul/li[1]/a")
-    private WebElement title;
-
-    @FindBy(xpath = "//*[@id=\"shopify-section-1482527966363\"]/section/ul[1]/li[2]/div/div/div/a")
+    @FindBy(xpath = "//a[contains(text(),'Shop now')]")
     private WebElement shopNowActionButton;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-collection-template\"]/div[2]/h1")
-    private WebElement text1;
+    @FindBy(xpath = "//h1[contains(text(),'Best sellers')]")
+    private WebElement verifyShopNowButton;
 
-    @FindBy(xpath = "//*[@id=\"shopify-section-1482527966363\"]/section/ul[2]/li[2]/a/span")
-    private WebElement rightIconArrow;
-
-    @FindBy(xpath = "//*[@id=\"shopify-section-1482527966363\"]/section/ul[2]/li[1]/a/span")
-    private WebElement leftIconArrow;
-
-    @FindBy(xpath = "//*[@id=\"shopify-section-1482528454151\"]/div/div/div/h2")
-    private WebElement featuredWatchesSection;
-
-    @FindBy(className = "shopify-section featured-collection-section")
+    @FindBy(xpath = "//span[contains(text(),'Quarta')]")
     private WebElement quartaWatch;
 
-    @FindBy(className = "sub-menu  ")
+    @FindBy(xpath = "//div[contains(@class,'twelve columns nav mobile_hidden')]//li[1]//li[1]")
     private WebElement shopMenu;
-
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[1]/div/ul/li[1]/a")
-    private WebElement mensWatchesLink;
-
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[1]/div/ul/li[2]/a")
-    private WebElement womensWatchesLink;
 
     @FindBy(partialLinkText = "Gift Cards")
     private WebElement giftCardsLink;
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[1]/div/ul")
-    private List<WebElement> dm;
+    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[1]")
+    private List <WebElement> dm;
 
     @FindBy(xpath = "//span[@class='arrow']")
     private WebElement hovover;
 
     public void clickingBrandLink() {
-        ApplicationPageBase.click(brandLink,"brandLink");
-
-    }
-    public void clickingContactUsLink(){
-
-        ApplicationPageBase.click(contactUsButton,"contactUsButton");
+        click(brandLink, "brandLink");
 
     }
 
-    public void outfitterAndEmailLinks(){
+    public void clickingContactUsLink() {
 
-        watchOutfittersLogo.isDisplayed();
-        TestLogger.log("watchoutfitters logo is displayed");
-        emailIcon.isDisplayed();
-        Assert.assertEquals(true, emailIcon.isDisplayed());
-    }
-
-    public void searchLink(){
-
-        ApplicationPageBase.click(searchIcon,"searchIcon");
-        searchIcon.isEnabled();
-    }
-
-    public void logInIon() {
-        ApplicationPageBase.click(logInIcon,"logInIcon");
-        TestLogger.log("Login page is displayed");
+        click(contactUsButton, "contactUsButton");
 
     }
 
-    public void shoppingCartLink(){
+    public void emailIconLink() {
+        click(emailIcon, "emailIcon");
 
-        ApplicationPageBase.click(shoppingCartIcon,"shoppingCartIcon");
-        String text = ApplicationPageBase.getText(title,"title");
-        Assert.assertEquals(text, "CONTINUE SHOPPING");
+
     }
 
-    public void shopNowLinkAndLeftRightArrows(){
+    public void searchLink() {
 
-        ApplicationPageBase.click(shopNowActionButton,"shopNowActionButton");
-        ApplicationPageBase.getText(text1,"text1");
-        Assert.assertEquals(text1, "BEST SELLERS");
-        ApplicationPageBase.click(rightIconArrow,"rightIconArrow");
-        ApplicationPageBase.click(leftIconArrow,"leftIconArrow");
-        featuredWatchesSection.isDisplayed();
-        ApplicationPageBase.click(quartaWatch,"quartaWatch");
-        TestLogger.log("All the links are displayed and working properly");
+        click(searchIcon, "searchIcon");
+
+    }
+
+    public void logInIcon() {
+        click(logInIcon, "logInIcon");
+
+
+    }
+
+    public void shoppingCartLink() {
+
+        click(shoppingCartIcon, "shoppingCartIcon");
+
     }
 
     public void shopHoverOverMenu() throws InterruptedException {
-
         Actions actions = new Actions(driver);
         Thread.sleep(4000);
         actions.moveToElement(hovover).build().perform();
 
-        for (int i = 0; i <dm.size() ; i++) {
+        for (int i = 0; i < dm.size(); i++) {
             String tittles = dm.get(i).getText();
             System.out.println(tittles);
         }
-        for (WebElement titles:dm){
+        for (WebElement titles : dm) {
             System.out.println(titles.getText());
-            TestLogger.log("Hovermenu and getting titles");
         }
     }
 
+
+    public WebElement getVerifyBrandLink() {
+        TestLogger.log("About us page displayed ");
+
+        return verifyBrandLink;
+    }
+
+    public WebElement getVerifyContactUsLink() {
+        TestLogger.log("Submit button is displayed");
+
+        return verifyContactUsLink;
+    }
+
+    public WebElement getVerifyLogInIconPage() {
+        TestLogger.log("Customer logIn page is displayed");
+
+        return verifyLogInIconPage;
+    }
+
+    public WebElement getEmailIcon() {
+        TestLogger.log("email icon is enabled");
+
+        return emailIcon;
+    }
+
+    public WebElement getVerifyShopNowButton() {
+        TestLogger.log("watch tool and accessories page displayed");
+
+        return verifyShopNowButton;
+    }
 
 }

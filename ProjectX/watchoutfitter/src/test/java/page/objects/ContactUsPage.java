@@ -1,65 +1,70 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import reporting.TestLogger;
 
-public class ContactUsPage extends CommonAPI {
+public class ContactUsPage extends ApplicationPageBase {
 
-    @FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/ul/li[3]/a")
+    @FindBy(xpath = "//a[contains(@class,'top-link')][contains(text(),'Contact Us')]")
     private WebElement contactUsLink;
 
-    @FindBy(xpath = "//h1[@class='collection_title']")
-    private WebElement title;
+    @FindBy(xpath = "//input[@placeholder='Type your name']")
+    private WebElement fullname;
 
-    @FindBy(xpath = "//*[@id=\"_form_1_\"]/div[1]/div[1]/div/input")
-    private WebElement funame;
-
-    @FindBy(xpath = "//*[@id=\"_form_1_\"]/div[1]/div[2]/div/input")
+    @FindBy(xpath = "//input[@placeholder='Type your email']")
     private WebElement email;
 
-    @FindBy(xpath = "//*[@id=\"_form_1_\"]/div[1]/div[3]/div/textarea")
+    @FindBy(xpath = "//textarea[@name='field[2]']")
     private WebElement message;
 
     @FindBy(xpath = "//*[@id=\"_form_1_\"]/div[3]/a")
     private WebElement activeCampaignLink;
 
-    @FindBy(xpath = "//*[contains(text(),'help-c')]")
+    @FindBy(xpath = "//a[@title='Watch Outfitters FAQs']")
     private WebElement helpCenterLink;
 
+    @FindBy(xpath = "//h1[contains(text(),'Help Center')]")
+    private WebElement verifyHelpCenterPage;
 
 
     @FindBy(id = "_form_1_submit")
     private WebElement submitButton;
 
-    public void ContactusLink() {
-        ApplicationPageBase.click(contactUsLink,"contactUsLink");
-       String text= ApplicationPageBase.getText(title,"title");
-        Assert.assertEquals(text, "CONTACT US");
+    @FindBy(id = "_form_1_submit")
+    private WebElement verifysubmitButton;
+
+    public void contactusLink() {
+        click(contactUsLink, "contactUsLink");
 
     }
+
     public void enteringData() {
-        ApplicationPageBase.click(contactUsLink,"contactUsLink");
-        ApplicationPageBase.sendKeys(funame,"Firstname","Ziyad");
-        ApplicationPageBase.sendKeys(email,"email","hussain.ziyad90@gmail.com");
-        ApplicationPageBase.sendKeys(message,"messageBox","This is a test case");
-        ApplicationPageBase.click(submitButton,"submitButton");
-
-    }
-    public void helpCenter(){
-        ApplicationPageBase.click(contactUsLink,"contactUsLink");
-        ApplicationPageBase.click(helpCenterLink,"helpCenterLink");
-        Assert.assertEquals(true,helpCenterLink.isEnabled());
-
-
-
+        click(contactUsLink, "contactUsLink");
+        sendKeys(fullname, "FullName", "Ziyad");
+        sendKeys(email, "email", "hussain.ziyad90@gmail.com");
+        sendKeys(message, "messageBox", "This is a test case");
+        click(submitButton, "submitButton");
 
     }
 
+    public void helpCenter() {
+        click(contactUsLink, "contactUsLink");
+        click(helpCenterLink, "helpCenterLink");
 
+    }
 
+    public WebElement getVerifysubmitButton() {
+        TestLogger.log("submit button is displayed");
+        return verifysubmitButton;
+
+    }
+
+    public WebElement getVerifyHelpCenterPage() {
+        TestLogger.log("Help Center Header is displayed");
+        return verifyHelpCenterPage;
+    }
 }
-
-

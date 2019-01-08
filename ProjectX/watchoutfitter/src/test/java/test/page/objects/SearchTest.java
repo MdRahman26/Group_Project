@@ -1,15 +1,13 @@
 package test.page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.objects.SearchTextPage;
 
-public class SearchTest  extends CommonAPI {
+public class SearchTest  extends ApplicationPageBase {
 
 
     SearchTextPage objOfSearchPage=null;
@@ -22,6 +20,7 @@ public class SearchTest  extends CommonAPI {
     @Test
     public void searchBarTest(){
         objOfSearchPage.searchBar();
+        Assert.assertTrue(objOfSearchPage.getVerifySearchPage().isDisplayed());
 
 
 

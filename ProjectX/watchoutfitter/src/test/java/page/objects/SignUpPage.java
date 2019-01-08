@@ -1,13 +1,14 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
+import base.BrowserDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
-import reporting.TestLogger;
 
-public class SignUpPage extends CommonAPI {
+import static application.page.base.ApplicationPageBase.click;
+import static application.page.base.ApplicationPageBase.sendKeys;
+
+public class SignUpPage extends ApplicationPageBase {
 
 
     @FindBy(className = "icon-account")
@@ -32,13 +33,13 @@ public class SignUpPage extends CommonAPI {
     private WebElement signUpButton;
 
     public void signUpPage() throws InterruptedException {
-        ApplicationPageBase.click(myAccountIcon,"myAccountIcon");
-        ApplicationPageBase.click(signUpLink,"signUpLink");
-        ApplicationPageBase.sendKeys(fName,"FirstName","Ziyad");
-        ApplicationPageBase.sendKeys(lName,"LastName","Hussain");
-        ApplicationPageBase.sendKeys(email,"Email","hussain.ziyad90@gmail.com");
-        ApplicationPageBase.sendKeys(pass,"Password","Allah1212");
-        ApplicationPageBase.click(signUpButton,"signUpButton");
+        click(myAccountIcon,"myAccountIcon");
+        click(signUpLink,"signUpLink");
+        sendKeys(fName,"FirstName","john");
+        sendKeys(lName,"LastName","carlos");
+        sendKeys(email,"Email","carlos@gmail.com");
+        sendKeys(pass,"Password","carlos12");
+        click(signUpButton,"signUpButton");
 
     }
 }

@@ -18,7 +18,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class CommonAPI {
+public class BrowserDriver {
     public static ExtentReports extent;
     @BeforeSuite
     public void extentSetup(ITestContext context) {
@@ -67,7 +67,7 @@ public class CommonAPI {
         return calendar.getTime();
     }
 
-    public static WebDriver driver = null;
+    public static org.openqa.selenium.WebDriver driver = null;
 
     @Parameters({/*"useCloudEnv","cloudEnvName", */"os", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod

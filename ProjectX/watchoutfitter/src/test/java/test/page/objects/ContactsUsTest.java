@@ -1,28 +1,43 @@
 package test.page.objects;
-import base.CommonAPI;
+
+import application.page.base.ApplicationPageBase;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.objects.ContactUsPage;
 
-public class ContactsUsTest  extends CommonAPI {
+public class ContactsUsTest extends ApplicationPageBase {
 
-    ContactUsPage objOfContactUsPage=null;
+    ContactUsPage objOfContactUsPage = null;
+
     @BeforeMethod
-    public void initializationOfElements(){
-        objOfContactUsPage= PageFactory.initElements(driver,ContactUsPage.class);
+    public void initializationOfElements() {
+        objOfContactUsPage = PageFactory.initElements(driver, ContactUsPage.class);
     }
 
-    @Test
+    @Test(priority = 1)
     public void contactUsLinkTest() {
-        objOfContactUsPage.ContactusLink();
+        objOfContactUsPage.contactusLink();
+        Assert.assertTrue(objOfContactUsPage.getVerifysubmitButton().isDisplayed());
+
     }
-    @Test
-    public void enteringDataTest(){
+
+
+    @Test(priority = 3)
+
+    public void enteringDataTest() {
         objOfContactUsPage.enteringData();
+        Assert.assertTrue(objOfContactUsPage.getVerifysubmitButton().isDisplayed());
+
+
     }
-    @Test
-    public void helpCenterLinkTest(){
+
+    @Test(priority = 2)
+
+    public void helpCenterLinkTest() {
         objOfContactUsPage.helpCenter();
+        Assert.assertTrue(objOfContactUsPage.getVerifyHelpCenterPage().isDisplayed());
     }
+
 }

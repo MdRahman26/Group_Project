@@ -1,12 +1,12 @@
 package test.page.objects;
 
-import base.CommonAPI;
+import application.page.base.ApplicationPageBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.objects.SignUpPage;
 
-public class SignUpPageTest extends CommonAPI {
+public class SignUpPageTest extends ApplicationPageBase {
 
     SignUpPage objOfSignUpPage=null;
 
@@ -14,6 +14,7 @@ public class SignUpPageTest extends CommonAPI {
     public void initializationOfElements(){
         objOfSignUpPage= PageFactory.initElements(driver,SignUpPage.class);
         System.out.println("succesfully created Account");
+
     }
 
     @Test

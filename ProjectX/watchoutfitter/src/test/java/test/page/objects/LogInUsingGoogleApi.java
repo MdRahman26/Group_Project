@@ -1,7 +1,7 @@
 package test.page.objects;
 
-import sheet.google.api.GoogleSheetReader;
-import base.CommonAPI;
+
+import application.page.base.ApplicationPageBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import page.objects.HomePage;
 import page.objects.LogInPage;
 import reporting.TestLogger;
+import sheet.google.api.GoogleSheetReader;
 
 import java.io.IOException;
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.Properties;
 
 import static application.page.base.ApplicationPageBase.loadProperties;
 
-public class LogInUsingGoogleApiTest extends CommonAPI {
+public class LogInUsingGoogleApi extends ApplicationPageBase {
 
     LogInPage objLoginPage =null;
     HomePage objHomePage = null;

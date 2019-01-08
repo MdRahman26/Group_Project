@@ -1,18 +1,12 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 import reporting.TestLogger;
 
-import static application.page.base.ApplicationPageBase.click;
-import static application.page.base.ApplicationPageBase.getText;
-import static application.page.base.ApplicationPageBase.sendKeys;
 
-
-public class LogInPage extends CommonAPI {
+public class LogInPage extends ApplicationPageBase {
 
 
     @FindBy(className = "icon-account")
@@ -28,29 +22,30 @@ public class LogInPage extends CommonAPI {
     private WebElement signInButton;
 
     @FindBy(css = "#customer_login > div > ul > li")
-    private WebElement errorMessage;
+    private WebElement verfiyInvalidLogin;
+
+    @FindBy(className = "collection_title")
+    private WebElement verifyValidLogin;
 
 
     public void InvalidLogIn() {
-        ApplicationPageBase.click(logInIcon, "logInIcon");
-        ApplicationPageBase.sendKeys(email, "email", "hussain.ziyad@gmail.com");
+        click(logInIcon, "logInIcon");
+        sendKeys(email, "email", "hussain.ziyad@gmail.com");
         sendKeys(password, "password", "khan12");
         click(signInButton, "signInButton");
-        String errorText = getText(errorMessage, "errorMessage");
-        Assert.assertEquals(errorText, "INVALID LOGIN CREDENTIALS.");
 
     }
 
     public void ValidLogIn() {
-        click(logInIcon,"logInIcon");
-        sendKeys(email,"email","hussain.ziyad90@gmail.com");
-        sendKeys(password,"password","Allah1212");
-        click(signInButton,"signInButton");
+        click(logInIcon, "logInIcon");
+        sendKeys(email, "email", "hussain.ziyad90@gmail.com");
+        sendKeys(password, "password", "Allah1212");
+        click(signInButton, "signInButton");
     }
 
 
     public LogInPage login(String em, String pass) {
-        click(logInIcon,"logInIcon");
+        click(logInIcon, "logInIcon");
         sendKeys(email, "emailBox", em);
         sendKeys(password, "passwordBox", pass);
         click(signInButton, "submitButton");
@@ -65,11 +60,22 @@ public class LogInPage extends CommonAPI {
         return new LogInPage();
     }
 
-    public String getErrorMessage(){
+    public String getErrorMessage() {
 
-        String actualText = getText(errorMessage,"errorMessage");
+        String actualText = getText(verfiyInvalidLogin, "errorMessage");
 
         return actualText;
+    }
+
+    public WebElement getVerifyInvalidLogIn(){
+        TestLogger.log("Invalid LogIn");
+
+        return verfiyInvalidLogin;
+    }
+    public WebElement getVerifyValidLogin(){
+        TestLogger.log("Successful Login");
+
+        return verifyValidLogin;
     }
 
 

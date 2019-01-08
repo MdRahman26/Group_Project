@@ -1,36 +1,46 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.CommonAPI;
+import base.BrowserDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import reporting.TestLogger;
 
-public class SearchTextPage extends CommonAPI {
+import static application.page.base.ApplicationPageBase.click;
+import static application.page.base.ApplicationPageBase.isEnableStatus;
+import static application.page.base.ApplicationPageBase.sendKeys;
+
+
+public class SearchTextPage extends ApplicationPageBase{
 
     @FindBy(id = "search-toggle")
     private WebElement searchIcon;
 
-    @FindBy(xpath = "//*[@id=\"search\"]/div/div/form/input[2]")
+    @FindBy(xpath = "//input[contains(@placeholder,'Search Watch Outfitters...')]")
     private WebElement searchTextBox;
 
-    @FindBy(xpath = "//*[@id=\"search\"]/div/div/form/span")
+    @FindBy(xpath = "//span[contains(@class,'icon-search search-submit')]")
     private WebElement searchButton;
 
-    @FindBy(css = "#shopify-section-search-template > div:nth-child(2) " +
-            "> div > div:nth-child(1) > a > div.info > span.title")
-    private WebElement text;
+    @FindBy(xpath = "//a[contains(text(),'Next »')]")
+    private WebElement nextButton;
+
+    @FindBy(className = "collection_title ")
+    private WebElement verifySearchPage;
 
 
     public void searchBar() {
-        ApplicationPageBase.click(searchIcon,"searchIcon");
-        ApplicationPageBase.isEnableStatus(driver,searchIcon);
-        ApplicationPageBase.sendKeys(searchTextBox,"searchTextBox","watches");
-        ApplicationPageBase.click(searchButton,"searchButton");
-        String actualtext =ApplicationPageBase.getText(text,"text");
-        Assert.assertEquals(actualtext,"PERFECT SKULL WATCH AND FREE HAND-MADE EMBROIDERY PURSE BUNDLE");
+        click(searchIcon, "searchIcon");
+        isEnableStatus(driver, searchIcon);
+        sendKeys(searchTextBox, "searchTextBox", "watches");
+        click(searchButton, "searchButton");
+        click(nextButton,"nextButton");
+    }
+    public WebElement getVerifySearchPage(){
+        TestLogger.log("37 Search results displayed");
+
+        return verifySearchPage;
 
 
 

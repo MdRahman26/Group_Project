@@ -23,7 +23,7 @@
             <class name="test.page.objects.ContactsUsTest"/>
             <class name="test.page.objects.FooterMenuTest"/>
             <class name="test.page.objects.HomePageTest"/>
-            <class name="test.page.objects.LogInUsingGoogleApiTest"/>
+            <class name="test.page.objects.LogInUsingGoogleApi"/>
             <class name="test.page.objects.SignUpPageTest"/>
 
 
