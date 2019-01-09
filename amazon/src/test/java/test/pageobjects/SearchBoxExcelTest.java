@@ -15,7 +15,6 @@ import page.objects.SearchBox;
 import java.io.File;
 
 public class SearchBoxExcelTest extends BrowserDriver {
-
     SearchBox objOfSearchBox = null;
     SeachBoxElementsForExcel elmOfSearchBox= null;
     @BeforeMethod
@@ -26,29 +25,22 @@ public class SearchBoxExcelTest extends BrowserDriver {
     }
 
     //reading data from excel file
-
-
    @DataProvider(name = "Diff_Section")
    public Object[][] getDifferentSectionTestData() throws Exception{
        File filepath = new File(System.getProperty("user.dir") +  "/src/test/testData/diff_section.xlsx");
        com.xlsx.api.MyDataReader dr = new MyDataReader();
        //Show me where is data file
        dr.setExcelFile(filepath.getAbsolutePath());
-
        String[][] data = dr.getExcelSheetData("Sheet1");
        return data;
    }
 
     @Test(dataProvider = "Diff_Section")
     public void differentSectionTest(String product_search, String confirm_message) {
-
     objOfSearchBox.searchTextBox(product_search);
-
     WebElement productMatch = elmOfSearchBox.matchElement(product_search);
-
     String returnText =  ApplicationPageBase.getDepartmentName(productMatch);
-
-        Assert.assertEquals(returnText,confirm_message);
+    Assert.assertEquals(returnText,confirm_message);
 
     }
 

@@ -2,23 +2,15 @@ package test.pageobjects;
 
 import base.BrowserDriver;
 import com.xlsx.api.MyDataReader;
-import google.sheet.api.GoogleSheetReader;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import page.objects.LogInPage;
-import reporting.TestLogger;
-
 import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Properties;
 
-import static application.page.base.ApplicationPageBase.loadProperties;
-
-public class LogInPageTest extends BrowserDriver {
+public class LogInPageUsingExcelTest extends BrowserDriver {
 
     LogInPage objOfLogInPage = null;
 
@@ -27,15 +19,12 @@ public class LogInPageTest extends BrowserDriver {
         objOfLogInPage = PageFactory.initElements(driver, LogInPage.class);
     }
 
-
-   /* @Test
+    @Test
     public void logInTest(){
 
-
-    objOfLogInPage.login("aaafnan@hjkl.com","765432");
-
+        objOfLogInPage.login("aaafnan@hjkl.com","765432");
+        //Assert.
     }
-*/
 
     @DataProvider(name="DP")
     public Object[][] getTestData() throws Exception{
@@ -43,21 +32,15 @@ public class LogInPageTest extends BrowserDriver {
         com.xlsx.api.MyDataReader dr = new MyDataReader();
         //Show me where is data file
         dr.setExcelFile(filepath.getAbsolutePath());
-
         String[][] data = dr.getExcelSheetData("Sheet1");
         return data;
     }
 
-
-
-
     @Test (dataProvider ="DP" )
-    public void invalidSignIn(String emailaddress,String enterpassword){
-
+    public void invalidSignInReadingExcelFile(String emailaddress,String enterpassword){
         objOfLogInPage.getlogin();
-
         objOfLogInPage.login(emailaddress,enterpassword);
+        Assert.assertTrue(objOfLogInPage.getErrorMeassage());
     }
-
 
 }

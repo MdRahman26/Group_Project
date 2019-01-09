@@ -1,12 +1,11 @@
 package page.objects;
 
 import application.page.base.ApplicationPageBase;
-import base.BrowserDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class ShoppingCart extends BrowserDriver {
+public class ShoppingCart extends ApplicationPageBase {
 
     @FindBy(id = "twotabsearchtextbox")
     private WebElement searchTextBox;
@@ -14,12 +13,8 @@ public class ShoppingCart extends BrowserDriver {
     @FindBy (how = How.XPATH,xpath= "//input[@value='Go']")
     private WebElement searchIcon;
 
-
     @FindBy (partialLinkText = "Computers & Accessories")
     private WebElement verifyComputers;
-
-    //
-
 
     @FindBy (className= "a-badge-text")
     private WebElement amazonChoice;
@@ -30,45 +25,40 @@ public class ShoppingCart extends BrowserDriver {
     @FindBy (id ="add-to-cart-button")
     private WebElement addToCart;
 
-
     @FindBy (id="hlb-next-steps")
     private WebElement verifyAddToCart;
 
-
     public void productsearch(String productName){
 
-        ApplicationPageBase.searchProduct(searchTextBox,productName);
-        ApplicationPageBase.clickButton(searchIcon,"searchIcon");
+        searchProduct(searchTextBox,productName);
+        clickButton(searchIcon,"searchIcon");
 
     }
 
 
     public void clickamazonChoice(){
-        ApplicationPageBase.clickButton(amazonChoice,"amazonChoice");
+        testPassed("selectLaptopTest");
+        clickButton(amazonChoice,"amazonChoice");
     }
 
-
-
-
-
     public String getVerifyComputers(){
-        return ApplicationPageBase.getText(verifyComputers);
+        testPassed("searchBox");
+        return getText(verifyComputers);
     }
 
 
     public String checkAmazonChoice(){
-        return ApplicationPageBase.getText(verifyAmazonChoice);
+        return getText(verifyAmazonChoice);
     }
 
 
     public boolean checkAddToCartButton(){
+        testPassed("addToCart");
         return verifyAddToCart.isDisplayed();
     }
 
-
-
     public void clickAddToCart(){
-        ApplicationPageBase.clickButton(addToCart,"addToCart");
+        clickButton(addToCart,"addToCart");
     }
 
 }

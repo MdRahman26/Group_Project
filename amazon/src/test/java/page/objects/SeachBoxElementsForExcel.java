@@ -1,10 +1,10 @@
 package page.objects;
 
-import base.BrowserDriver;
+import application.page.base.ApplicationPageBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SeachBoxElementsForExcel extends BrowserDriver {
+public class SeachBoxElementsForExcel extends ApplicationPageBase {
 
     @FindBy(partialLinkText = "Computers & Accessories")
     private WebElement macBook;
@@ -63,11 +63,7 @@ public class SeachBoxElementsForExcel extends BrowserDriver {
             case "god father":
                 nameOfElement =getGodFather();
                 break;
-
         }
-
         return nameOfElement;
-
-
     }
 }

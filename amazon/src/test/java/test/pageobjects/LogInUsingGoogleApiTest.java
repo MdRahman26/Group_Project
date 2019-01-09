@@ -42,19 +42,6 @@ public class LogInUsingGoogleApiTest extends BrowserDriver {
             objOfLogInPage.login(cell.get(0).toString(), cell.get(1).toString());
 
             Assert.assertTrue(objOfLogInPage.getErrorMeassage());
-
-
-            //String expectedText = cell.get(2).toString();
-
- //           String actulText = objOfLogInPage.getErrorMeassage();
-
-
-
-
         }
-
-
-}
-
-
+    }
 }

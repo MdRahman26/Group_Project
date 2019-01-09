@@ -20,10 +20,8 @@ import static application.page.base.ApplicationPageBase.loadProperties;
 
 public class SearchBoxGoogleApiTest extends BrowserDriver {
 
-
     SearchBox objOfSearchBox = null;
     SeachBoxElementsForExcel elmOfSearchBox =null;
-
 
     @BeforeMethod
     public void initializationOfObject() {
@@ -40,23 +38,13 @@ public class SearchBoxGoogleApiTest extends BrowserDriver {
         TestLogger.log("Using Sheet Number " + range.charAt(5) + " and fields range  " + range.substring(6));
         List<List<Object>> getRecords = GoogleSheetReader.getSpreadSheetRecords(spreadsheetId, range);
 
-
             for (List cell : getRecords) {
-
                 //objOfSearchBox.home();
             objOfSearchBox.searchIcon(cell.get(0).toString());
-
                 WebElement productMatch = elmOfSearchBox.matchElement(cell.get(0).toString());
-
                 String returnText =  ApplicationPageBase.getDepartmentName(productMatch);
-
-                 Assert.assertEquals(returnText,cell.get(1).toString());
-
-
+                Assert.assertEquals(returnText,cell.get(1).toString());
 
         }
-
-
     }
-
 }

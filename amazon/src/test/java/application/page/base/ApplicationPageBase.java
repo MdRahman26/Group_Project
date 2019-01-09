@@ -16,10 +16,7 @@ public class ApplicationPageBase extends BrowserDriver {
     //Common method for inserting data into searchBox
     //making static method so we dont need to create object
 
-
-
     public static void searchProduct(WebElement webElementName,String productName){
-
 
         TestLogger.log("sending Keys to SearchBox");
         webElementName.sendKeys(productName);
@@ -76,7 +73,6 @@ public class ApplicationPageBase extends BrowserDriver {
 
 
     //for dataProvider method
-
 
     public static void sendKeys(WebElement webElement,String nameOfElement, String keys){
 
